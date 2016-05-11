@@ -1,0 +1,868 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中国银行_金融市场</title>
+<link href="market.css" rel="stylesheet"/>
+<link href="images/2016-03-13_170242.png"  rel="shortcut icon"/>
+<style type="text/css">
+	.lunHuan{
+		height:245px;
+		width:717px;
+		border:1px solid #CCC;
+		border-radius:4px;
+
+	}
+	.area{
+		width:718px;
+		height:241px;
+		background:url(img/boc2013_b_bg.jpg) no-repeat bottom;	
+	}
+	.left-ul li{
+		display:inline;
+		width:80px;
+		height:42px;
+		border:solid 1px #888;
+		float:left;
+		margin-left:20px;
+		margin-top:20px;
+	}
+	span a{
+		display:block;
+		font-size:20px;
+		color:#000;
+	}
+	.area .box1{
+		width:335px;
+		height:166px;
+		float:left;
+		padding-left:20px;
+		border-right:1px solid #989898;
+		margin-top:40px;
+		overflow:hidden;
+	}
+	.area .box2{
+		width:335px;
+		height:166px;
+		float:left;
+		padding-left:20px;
+		margin-top:40px;
+	}
+	.more{
+		font-size:12px;
+		color:#C90;
+		text-decoration:none;
+		float:right;
+		margin-right:8px;
+		margin-top:20px;
+	}
+	.common{
+		width:698px;
+		height:300px;
+		margin-top:40px;
+		background:url(img/boc2013_b_bg.jpg) no-repeat bottom;
+	
+		
+	}
+	.common_top ul{
+		margin-left:15px;
+	}
+	.common_top ul li{
+		float:left;
+		border:1px solid #CCC;
+		border-bottom:none;
+		background:url(img/bg.png);
+		padding:10px 20px 10px 4px;
+		margin-right:5px;
+	}
+	.common_top ul li a{
+		font-size:16px;
+	
+	}
+	.common_top .hr1{
+		height:1px;
+		border:none;
+		background:#CCC;
+		width:25px;
+		position:relative;
+		top:45px;
+		left:-619px;
+	}
+	.common_top .hr2{
+		height:1px;
+		border:none;
+		background:#CCC;
+		width:590px;
+		position:relative;
+		top:45px;
+		left:-421px;
+	}
+	.common_top .first{
+		background:none;
+	}
+	.common_top .first a{
+		color:#000;
+	}
+	.common_bottom .liCai{
+		font-size:16px;
+		color:#000;
+		
+	}
+	.common_bottom ul{
+		margin-left:20px;
+		
+	}
+	.common_bottom ul li{
+		background:url(img/boc2013_dot_icon.png) no-repeat 0px -76px;
+		text-indent:-10px;
+	}
+	.common_bottom ul li a:hover{
+		color:#F30;
+	}
+	.common_bottom .bottom_l{
+		float:left;
+		margin:20px 0px 0px 0px;
+		width:350px;
+		height:180px;
+		border-right:1px solid #CCC;
+		}
+	 .gengDuo{
+		color:#C90;
+		float:right;
+		margin-right:20px;
+		margin-top:20px;
+	}
+	 .gengDuo1{
+		color:#C90;
+		position:relative;
+		left:270px;
+		top:15px;
+		
+	}
+		
+	.common_bottom .bottom_r{
+		float:right;
+		margin:20px 150px 0px 10px;
+		
+	}
+	.store{
+		width:678px;
+		height:300px;
+		background:url(img/boc2013_b_bg.jpg) no-repeat bottom;
+		margin-top:30px;
+		
+	}
+	.store hr{
+		height:1px;
+		background:#CCC;
+		border:none;
+		margin-top:20px;
+	}
+	.store_bottom .liCai{
+		font-size:16px;
+		color:#000;
+		
+	}
+	.store_bottom ul{
+		margin-left:20px;
+		
+	}
+	.store_bottom ul li{
+		background:url(img/boc2013_dot_icon.png) no-repeat 0px -76px;
+		text-indent:-10px;
+	}
+	.store_bottom ul li a:hover{
+		color:#F30;
+	}
+	.store_bottom .bottom_l{
+		float:left;
+		margin:20px 0px 0px 0px;
+		width:350px;
+		height:180px;
+		border-right:1px solid #CCC;
+		}
+	 .gengDuo{
+		color:#C90;
+		float:right;
+		margin-right:20px;
+		margin-top:20px;
+	}
+	 .gengDuo1{
+		color:#C90;
+		position:relative;
+		left:270px;
+		top:15px;
+		
+	}
+		
+	.store_bottom .bottom_r{
+		float:right;
+		margin:20px 0px 0px 10px;
+		
+	}
+	.left{
+		float:left;
+		width:700px;
+	}
+	.right{
+		width:241px;
+		height:992px;
+		float:right;
+	}
+	.lonin{
+        width:239px;
+		height:218px;
+		border:1px solid #e1e2e3;
+		border-radius:5px;
+	}
+	.lonin ul li{
+		display:block;
+		width:181px;
+		height:35px;
+		padding-left:20px;
+		line-height:35px;
+		margin-top:10px;
+		background:url(img/boc2013_slider.png) no-repeat;
+		background-position:1px 0;
+	}
+	p{
+		font-size:20px;
+		color:#000;
+		margin-left:20px;
+		margin-top:15px;
+	}
+	.exchange{
+		width:241px;
+		height:310px;
+		margin-top:12px;
+		border:1px solid #e1e2e3;
+		border-radius:5px;
+	}
+	.exchange table{
+		font-size:12px;
+		text-align:center;
+		color:#535353;
+	}
+	.exchange td{
+		width:59px;
+		height:30px;
+	}
+	.exchange .curr{
+		width:81px;
+		height:30px;
+	}
+	.bg{
+		background-color:#f8f8f8;
+	}
+	.tel{
+		width:241px;
+		height:58px;
+		margin-top:12px;
+		background:url(img/boc2013_slider.png) no-repeat;
+		background-position:-1px -655px;
+	}
+	.tel p{
+		font-size:12px;
+		color:#535353;
+		padding-top:10px;
+		text-align:center;
+	}
+	.tel em{
+		color:#a71e32;
+		font:normal;
+		font-size:16px;
+		margin-left:70px;
+	}
+	.right-a{
+		line-height:58px;
+		font-size:14px;
+		color:#000;
+	}
+	.convince{
+		width:239px;
+		height:215px;
+		border:1px solid #e1e2e3;
+		border-radius:5px;
+		margin-top:13px;
+	}
+	.convince ul li{
+		background:url(img/boc2013_dot_icon.png) no-repeat;
+		background-position:0 -229px;
+		margin-left:20px;
+	}
+	#convin-li{
+		font-size:18px;
+		color:#000;
+		padding-left:20px;
+		line-height:43px;
+	}
+	.huang{
+		margin-top:13px;
+		
+	}
+	.huang a{
+		display:block;
+		width:173px;
+		height:58px;
+		background:url(img/boc2013_slider.png) no-repeat;
+		background-position:0px -287px;
+		padding-left:69px;
+		margin:0;
+	}
+	.money{
+		margin-top:13px;
+
+	}
+	.money a{
+		display:block;
+		width:173px;
+		height:58px;
+		background:url(img/boc2013_slider.png) no-repeat;
+		background-position:0px -229px;
+		padding-left:69px;
+		margin:0;
+	}
+	.practice{
+		width:239px;
+		height:255px;
+		border:1px solid #e1e2e3;
+		border-radius:5px;
+		margin-top:13px;
+	}
+	.practice ul li{
+		background:url(img/boc2013_dot_icon.png) no-repeat;
+		background-position:0 -229px;
+		margin-left:20px;
+	}
+	
+</style>
+</head>
+
+<body>
+    <div class="top">
+                <ul class="top_left">
+                    <li><a href="security.html" target="new">简体中文</a></li>
+                    <li><a href="security.html" target="new">繁体中文</a></li>
+                    <li><a href="security.html" target="new">English</a></li>
+                </ul>
+                <ul class="top_right">
+                    <li class="quanQiu"><a href="security.html" target="new">全球服务</a></li>
+                    <li class="wangDian"><a href="security.html" target="new">网点</a></li>
+                    <li>/<a href="security.html" class="fenBu" target="new">ATM分布</a></li>
+    
+                </ul>
+        
+   </div>
+   <div class="nav">
+                <div class="nav_top">
+                        <a href="title.html" target="new"><img src="images/bank.png" alt="中国银行"/></a>
+                        <p class="fuWu">服务热线：<span>95566</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信用卡热线：<span>40066 95566</span></p>
+                        
+                        <form >
+                            <input type="text" placeholder="请输入检索关键字" size="35" maxlength="35"/>
+                        </form>
+                   
+                        <img src="images/hr.png" alt="标题横线" class="biaoTiLian"/>
+    
+                </div>
+    
+                <div class="nav_bottom">
+                    <ul class="yi">
+                        <li class="last"><a href="index.html" id="shouYe " target="new">首页</a></li>
+                        
+                        <li class="one"><a href="firm_bank.html"id="shouYe" target="new">公司金融</a>
+                            <div class="two">
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">公司融资服务</a></li>
+                                        <li><a href="">贸易金融服务</a></li>
+                                        <li><a href="">公司金融市场服务</a></li>
+                                        <li><a href="">人民币结算服务</a></li>
+                                    
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">公司存款服务</a></li>
+                                        <li><a href="">养老金服务</a></li>
+                                        <li><a href="">全球公司金融</a></li>
+                                        <li><a href="">跨境人民币服务</a></li>
+                
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href=""> 中小企业服务</a></li>
+                                        <li><a href="">全球现金管理</a></li>
+                                        <li><a href="">公司银行服务</a></li>
+                                        <li><a href="">公告信息</a></li>
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                                <div class="two_last">
+                                    <img src="images/gong1.jpg"/><br/>
+                                    <img src="images/gong2.jpg"/>
+                                </div>
+                            </div>
+                        
+                        </li>
+                    
+                   
+                        <li class="one"><a href="money.html"id="shouYe" target="new">个人金融</a>
+                            <div class="two">
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">存款与账户</a></li>
+                                        <li><a href="">个人贷款</a></li>
+                                        <li><a href="">个人理财</a></li>
+                                        <li><a href="">个人汇兑</a></li>
+                                    
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">出国金融</a></li>
+                                        <li><a href="">惠民金融</a></li>
+                                        <li><a href="">私人银行</a></li>
+                                        <li><a href="">中银沪港通</a></li>
+                
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href=""> 个人银行</a></li>
+                                        <li><a href="">公告信息</a></li>
+                                        <li><a href="">优惠活动</a></li>
+                                    
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                                <div class="two_last">
+                                    <img src="images/ge1.jpg" class="ge1"/><br/>
+                                    <img src="images/ge2.jpg"/>
+                                </div>
+                            </div>
+                        
+                        </li>
+                   
+                        <li class="one"><a href="card.html" id="shouYe" target="new">银行卡</a>
+                            <div class="two">
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">公司融资服务</a></li>
+                                        <li><a href="">贸易金融服务</a></li>
+                                        <li><a href="">公司金融市场服务</a></li>
+                                        <li><a href="">人民币结算服务</a></li>
+                                    
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">公司存款服务</a></li>
+                                        <li><a href="">养老金服务</a></li>
+                                        <li><a href="">全球公司金融</a></li>
+                                        <li><a href="">跨境人民币服务</a></li>
+                
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href=""> 中小企业服务</a></li>
+                                        <li><a href="">全球现金管理</a></li>
+                                        <li><a href="">公司银行服务</a></li>
+                                        <li><a href="">公告信息</a></li>
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                                <div class="two_last">
+                                    <img src="images/dian1.jpg"/><br/>
+                                    <img src="images/dian2.jpg"/>
+                                </div>
+                            </div>
+                        
+                        
+                        </li>
+                    
+                        <li class="one"><a href="market.html" id="shouYe" target="new">金融市场</a>
+                            <div class="two">
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">存款与账户</a></li>
+                                        <li><a href="">个人贷款</a></li>
+                                        <li><a href="">个人理财</a></li>
+                                        <li><a href="">个人汇兑</a></li>
+                                    
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">出国金融</a></li>
+                                        <li><a href="">惠民金融</a></li>
+                                        <li><a href="">私人银行</a></li>
+                                        <li><a href="">中银沪港通</a></li>
+                
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href=""> 个人银行</a></li>
+                                        <li><a href="">公告信息</a></li>
+                                        <li><a href="">优惠活动</a></li>
+                                    
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                                <div class="two_last">
+                                    <img src="images/gong1.jpg"/><br/>
+                                    <img src="images/gong2.jpg"/>
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="one"><a href="Elec_bank.html" id="shouYe" target="new">电子银行</a>
+                            <div class="two">
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">存款与账户</a></li>
+                                        <li><a href="">个人贷款</a></li>
+                                        <li><a href="">个人理财</a></li>
+                                        <li><a href="">个人汇兑</a></li>
+                                    
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">出国金融</a></li>
+                                        <li><a href="">惠民金融</a></li>
+                                        <li><a href="">私人银行</a></li>
+                                        <li><a href="">中银沪港通</a></li>
+                
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href=""> 个人银行</a></li>
+                                        <li><a href="">公告信息</a></li>
+                                        <li><a href="">优惠活动</a></li>
+                                    
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                                <div class="two_last">
+                                    <img src="images/ge1.jpg" class="ge1"/><br/>
+                                    <img src="images/ge2.jpg"/>
+                                </div>
+                            </div>
+                        </li>
+                   
+                    
+                        <li class="one"><a href="bank.html" id="shouYe" target="new">投资者关系</a>
+                            <div class="two">
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">公司融资服务</a></li>
+                                        <li><a href="">贸易金融服务</a></li>
+                                        <li><a href="">公司金融市场服务</a></li>
+                                        <li><a href="">人民币结算服务</a></li>
+                                    
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">公司存款服务</a></li>
+                                        <li><a href="">养老金服务</a></li>
+                                        <li><a href="">全球公司金融</a></li>
+                                        <li><a href="">跨境人民币服务</a></li>
+                
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href=""> 中小企业服务</a></li>
+                                        <li><a href="">全球现金管理</a></li>
+                                        <li><a href="">公司银行服务</a></li>
+                                        <li><a href="">公告信息</a></li>
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                                <div class="two_last">
+                                    <img src="images/gong1.jpg"/><br/>
+                                    <img src="images/gong2.jpg"/>
+                                </div>
+                            </div>
+                        
+                        </li>
+                    
+                        <li class="one"><a href="about_bank.html" id="shouYe" target="new">关于中行</a>
+                            <div class="two">
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">存款与账户</a></li>
+                                        <li><a href="">个人贷款</a></li>
+                                        <li><a href="">个人理财</a></li>
+                                        <li><a href="">个人汇兑</a></li>
+                                    
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href="">出国金融</a></li>
+                                        <li><a href="">惠民金融</a></li>
+                                        <li><a href="">私人银行</a></li>
+                                        <li><a href="">中银沪港通</a></li>
+                
+                                    </ul>
+                                
+                                </div>
+                                <div class="two_1">
+                                    <ul id="float">
+                                        <li><a href=""> 个人银行</a></li>
+                                        <li><a href="">公告信息</a></li>
+                                        <li><a href="">优惠活动</a></li>
+                                    
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                                <div class="two_last">
+                                    <img src="images/ge1.jpg" class="ge1"/><br/>
+                                    <img src="images/ge2.jpg"/>
+                                </div>
+                            </div>
+                        </li>
+                     
+                    </ul>
+                    
+                
+                </div>
+        
+    </div>
+    <div class="cramb">
+		<ul>
+        	<li><span>当前位置：</span></li>
+            <li><a href="index.html" target="new">首页</a><span>&gt;</span></li>
+            <li><a href="market.html" target="new">金融市场</a></li>
+        </ul>
+    </div>
+    <div class="main">
+    	
+        	<div class="left">
+           		 <div class="lunHuan">
+               		<embed src="img/gerenjinrong1.swf" width="719px" height="200px"/>
+                    <a href="security.html" title="个人智能通存款" class="li1" target="new">个人智能通存款</a>
+              		<a href="security.html" title="个人联名账户" class="li1" target="new">个人联名账户</a>
+            	 </div>
+           		 <div class="area">
+                	<div class="box1">
+                   <span class="title1">
+                       <a href="title.html" target="new">公告信息</a>
+                   </span>
+                   <ul>
+                        <li class="liimg"><a href="security.html" class="li1" target="new">关于请通过官方渠道购买中银理财产品的提示</a></li>
+                        <li class="liimg"><a href="security.html" class="li1" target="new">关于做好2016年春节期间市场风险控制工作的通知</a></li>
+                        <li class="liimg"><a href="security.html" class="li1" target="new">中银稳健增长(R)2016年春节期间交易安排的善意提示</a></li>
+                        <a href="security.html"  class="more" target="new">更多&gt;</a>
+                   </ul>
+                </div>
+               	<div class="box2">
+                   <span class="title1">
+                       <a href="title.html" target="new">优惠活动</a>
+                   </span>
+                   <ul>
+                        <li class="liimg"><a href="security.html" class="li1" target="new">中国银行2015年金交所代理业务交易大赛正式启动</a></li>
+                        <li class="liimg"><a href="security.html" class="li1" target="new">[河北]2015年账户贵金属“优惠季”活动开始啦！</a></li>
+                        <li class="liimg"><a href="security.html" class="li1" target="new">2015年中国银行账户贵金属业务客户回馈活动</a></li>
+                        <a href="security.html"  class="more" target="new">更多&gt;</a>
+                   </ul>
+                </div>
+            	</div>
+            
+            	 <div class="common">
+            		<div class="common_top">
+                	<ul>
+                    	<li class="first"><a href="title.html" target="new">理财产品</a></li>
+                        <li><a href="title.html" target="new">外汇</a></li>
+                        <li><a href="title.html" target="new">黄金</a></li>
+                        <li><a href="title.html" target="new">证券</a></li>
+                        <li><a href="title.html" target="new">债券</a></li>
+                        <li><a href="title.html" target="new">基金</a></li>
+                    	<hr class="hr1"/>
+                        <hr class="hr2"/>
+                    </ul>
+                </div>
+               		<div class="common_bottom">
+                	<div class="bottom_l">
+                    	<a href="title.html" class="liCai" target="new">理财产品公告</a>
+                        <ul>
+                        <li><a href="security.html" title="“博弈BYAQKFL28D—28天按期开放”产品系列终..." target="new">“中银基智通理财计划-流动性增强系列” 2016...</a></li>
+                        <li><a href="security.html" title="“博弈BYAQKFL28D—28天按期开放”产品系列终..." target="new">“中银智荟理财计划” 2016年089-092期发售公告</a></li>
+                        <li><a href="security.html" title="“博弈BYAQKFL28D—28天按期开放”产品系列终..." target="new">“博弈BYAQKFE91D—91天按期开放”产品系列终...</a></li>
+                        <li><a href="security.html" title="“博弈BYAQKFL28D—28天按期开放”产品系列 终..." target="new">“博弈BYAQKFL28D—28天按期开放”产品系列终...</a></li>
+                        
+                        </ul>
+                        <a href="security.html" class="gengDuo" target="new">更多&gt;</a>
+                    </div>
+                    <div class="bottom_r">
+                    	<a href="title.html" class="liCai" target="new">理财产品净值</a>
+                        <ul>
+                        	<li><a href="security.html" title="中银精选基金3期" target="new">中银精选基金3期</a></li>
+                            <li><a href="security.html" title="中银QD02(中银稳健增长)" target="new">中银QD02(中银稳健增长)</a></li>
+                            <li><a href="security.html" title="中银QD03(中银新兴市场)" target="new">中银QD03(中银新兴市场)</a></li>
+                            <li><a href="security.html" title="债市通(中银债市通理财 计划)" target="new">债市通(中银债市通理财计划)</a></li>
+                        
+                        </ul>
+                        <a href="security.html" class="gengDuo1" target="new">更多&gt;</a>
+                    </div>
+                </div>
+            	</div>
+           		 <div class="store">
+               		 <div class="store_top">
+                		<p>研究与分析</p>
+                	 </div>
+                  	 <hr/>
+                 	 <div class="store_bottom">
+                		<div class="bottom_l">
+                    	<a href="title.html" class="liCai" target="new">中银分析</a>
+                        <ul>
+                        	<li><a href="security.html" title="中银分析(每日资讯)2016年03月18日" target="new">中银分析(每日资讯)2016年03月18日</a></li>
+                            <li><a href="security.html" title="中银分析(每日资讯)2016年03月17日" target="new">中银分析(每日资讯)2016年03月17日</a></li>
+                            <li><a href="security.html" title="中银分析(每日资讯)2016年03月16日" target="new">中银分析(每日资讯)2016年03月16日</a></li>
+                            <li><a href="security.html" title="中银分析(每日资讯)2016年03月16日" target="new">中银分析(每日资讯)2016年03月16日</a></li>
+                        
+                        </ul>
+                        <a href="security.html" class="gengDuo" target="new">更多&gt;</a>
+                    </div>
+                        <div class="bottom_r">
+                            <a href="title.html" class="liCai" target="new">宏观经济研究</a>
+                            <ul>
+                                <li><a href="security.html" title="《宏观观察》2016年第6期：盘点投资“开门红”..." target="new">《宏观观察》2016年第6期：盘点投资“开门红”...</a></li>
+                                <li><a href="security.html" title="《宏观观察》2016年第5期：一线城市房价过热的..." target="new">《宏观观察》2016年第5期：一线城市房价过热的...</a></li>
+                                <li><a href="security.html" title="《宏观观察》2016年第4期：财政政策支持供给侧..." target="new">《宏观观察》2016年第4期：财政政策支持供给侧...</a></li>
+                                <li><a href="security.html" title="《宏观观察》2016年第3期：人民币汇率进入盯住..." target="new">《宏观观察》2016年第3期：人民币汇率进入盯住...</a></li>
+                            
+                            </ul>
+                            <a href="security.html" class="gengDuo1" target="new">更多&gt;</a>
+                       </div>
+            		 </div>
+       			</div>
+      		</div>
+        
+        	<div class="right">
+           		<div class="lonin">
+              <p>网上银行</p>
+              <ul>
+                  <li title="请从www.boc.cn, www.bankofchina.com进入"><a href="client.html" target="new">个人客户网银登录</a></li>
+                  <li title="请从www.boc.cn, www.bankofchina.com进入"><a href="client.html" target="new">个人贵宾网银登录</a></li>
+                  <li title="请从www.boc.cn, www.bankofchina.com进入"><a href="client.html" target="new">企业客户网银登录</a></li>
+              </ul> 
+           </div> 
+           <div class="exchange">
+               <p>外汇牌价</p>
+              <table width="100%" cellspacing="0" cellpadding="0">
+                 <tbody>
+                    <tr>
+                      <th class="curr">币种</th>
+                      <th>汇买</th>
+                      <th>汇卖</th>
+                    </tr>
+                    <tr class="bg">
+                       <td class="curr">澳大利亚元</td>
+                       <td>487.47</td>
+                       <td>492.37</td>
+                    </tr>
+                    <tr >
+                       <td class="curr">欧元</td>
+                       <td>719.32</td>
+                       <td>724.38</td>
+                    </tr>
+                    <tr class="bg">
+                       <td class="curr">英镑</td>
+                       <td>827.76</td>
+                       <td>937.08</td>
+                    </tr>
+                    <tr>
+                       <td class="curr">港币</td>
+                       <td>83.55</td>
+                       <td>83.87</td>
+                    </tr>
+                    <tr class="bg">
+                       <td class="curr">日元</td>
+                       <td>5.6944</td>
+                       <td>5.7344</td>
+                    </tr>
+                    <tr>
+                       <td class="curr">美元</td>
+                       <td>648.22</td>
+                       <td>650.82</td>
+                    </tr>
+                 </tbody>
+              </table>
+                  <a href="security.html" class="more" target="new">海外分行外汇牌价&gt;</a>
+           </div>
+           <div class="huang">
+                <a href="title.html" class="right-a" target="new">外汇黄金走势图</a>
+            </div>
+           <div class="money">
+                <a href="title.html" class="right-a" target="new">理财计算器</a>
+            </div>
+            <div class="practice">
+                <a href="title.html" id="convin-li" target="new">实用信息</a>
+               <ul>
+                   <li><a href="security.html" class="li1" target="new">存/贷款利率</a></li>
+                   <li><a href="security.html" class="li1" target="new">中国银行人民币债券交易指数</a></li>
+                   <li><a href="security.html" class="li1" target="new">代销基金净值</a></li>
+                   <li><a href="security.html" class="li1" target="new">券商产品净值</a></li>
+                   <li><a href="security.html" class="li1" target="new">理财产品净值</a></li>
+                   <li><a href="security.html" class="li1" target="new">中国人民币国际化指数</a></li>
+                   <li><a href="security.html" class="li1" target="new">境内外债券投融资比较指数</a></li>
+               </ul> 
+            </div>
+        	</div>
+     </div>
+        
+    <div class="bottom">
+        	<div class="bottom_top">
+            	<p>服务热线：<span class="dianHua">95566</span><span class="diQu">（大陆地区）；</span><span class="dianHua">+86(区号)95566</span><span class="diQu">（海外及港澳台地区）</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信用卡热线：<span class="dianHua">40066 95566</span><span class="diQu">（大陆地区）；</span><span class="dianHua">+86(区号)40066 95566</span><span class="diQu">(海外及港澳台地区)</span></p>
+                
+            </div>
+            <div class="bottom_bottom">
+            	<ul>
+                	<li><a href="security.html" target="new">网站地图</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="security.html" target="new">版权声明</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="security.html" target="new">使用条款</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="security.html" target="new">联系我们</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li class="liLast"><a href="security.html">京ICP备10052455号 京公网安备110102002036号 </a></li>
+                    
+                </ul><br/><br/>
+                <p>Copyright© BANK OF CHINA(BOC) All Rights Reserved.</p>
+            </div>
+        </div>
+</body>
+</html>
+        

@@ -1,0 +1,548 @@
+ 	body{
+		background:url(images/background.png);
+	}
+	.ge1{
+		width:190px;
+		height:60px;
+	}
+
+	.login{
+		width:978px;
+		height:379px;
+		background:#FFF;
+		margin-top:13px;
+		border:1px solid #CCC;
+		border-radius:4px;
+	}
+	.login embed{
+		width:100%;
+		height:288px;
+		
+	}
+	.login_bottom{
+		border-top:1px solid #CCC;
+		margin-top:-4px;
+	}
+	.login_bottom div{
+		float:left;
+		width:180px;
+		height:90px;
+		border-right:1px solid #CCC;
+	}
+	.bottom_1 ul{
+		margin:20px 0px 0px 40px;
+		
+	
+		}
+	.bottom_1 ul li{
+		padding:3px;
+		font-size:14px;
+		
+	}
+	.bottom_1 ul li a:hover{
+		color:#000;
+	}
+	.login_bottom .bottom_2{
+		float:right;
+		width:240px;
+		border:none;
+		}
+	.bottom_2 span{
+		margin-top:20px;
+		color:#C90;
+		font-size:12px;
+	}
+	.weiBo{
+		position:relative;
+		top:10px;
+	}
+	.bottom_2 hr{
+		height:1px;
+		border:none;
+		background:url(images/boc2013_dot_linex.gif);
+		width:220px;
+		margin-top:15px;
+		margin-left:-1px;
+	}
+	.bottom_2 p{
+		font-size:12px;
+		padding-top:4px;
+	}
+	.dengLu{
+		width:222px;
+		height:188px;
+		background:#FFF;
+		position:relative;
+		top:-288px;
+		left:350px;
+		border:1px solid #FFF;
+		border-radius:4px;
+		
+		
+	}
+	.dengLu ul{
+		position:relative;
+		top:-80px;
+		left:30px;
+		}
+	.dengLu ul li{
+		padding:10px;
+		width:135px;
+	}
+	.dengLu ul li:hover{
+		background:url(images/dayu.png) no-repeat center right;
+	}
+	.dengLu ul li a{
+		font-size:14px;
+		color:#000;
+	}
+	
+	.announcement{
+		width:978px;
+		height:190px;
+		background:#FFF;
+		margin-top:13px;
+		border:1px solid #CCC;
+		border-radius:4px;
+	}
+	.announcement_left{
+		float:left;
+		width:318px;
+		height:170px;
+		margin:22px 0px 0px 20px
+		
+	}
+	
+	 .gongGao{
+		font-size:20px;
+		color:#000;
+		
+		
+	}
+	 .dongTai{
+		color:#999;
+		background:url(images/gonggao.png) no-repeat center left;
+		margin-left:15px;
+
+	}
+	
+	 .gengDuo{
+		float:right;
+		margin:10px 20px 0px 0px;
+		color:#C93;
+	
+	}
+	.announcement_right{
+		float:right;
+		width:635px;
+		height:100%;
+		border-left:1px solid #CCC;
+		}
+	.announcement_right a{
+		display:block;
+		float:left;
+		margin-left:-2px;
+		margin-top:5px
+		}
+	.announcement_right p{
+		margin:12px;
+	}
+	.announcement_right a:hover{
+		color:#F30;
+	}
+	.single{
+		width:978px;
+		height:360px;
+		background:#FFF;
+		margin-top:13px;
+		border:1px solid #CCC;
+		border-radius:4px;
+		
+	}
+	 .single_top{
+		width:100%;
+		height:45px;
+		border-bottom:1px solid #CCC;
+	}
+	 .single_bottom{
+		width:100%;
+		height:316px;
+	}
+	 .single_left{
+		float:left;
+		width:343px;
+		height:100%;
+		border-right:1px solid #CCC;
+	}
+	.single_left table{
+		margin-top:20px;
+		width:262px;
+		height:100px;
+		border:none;
+		border:1px solid #CCC;
+		border-radius:4px;
+	}
+	.single_left .gongGao{
+		font-size:14px;
+	}
+	.geRen{
+		font-size:20px;
+		color:#000;
+		line-height:45px;
+		text-indent:20px;
+	}
+	.single_left p{
+		font-size:12px;
+	}
+	.single_right{
+		float:right;
+		width:634px;
+	}
+	.single_right_1{
+		width:580px;
+		height:61px;
+		border-bottom:1px solid #CCC;
+	}
+	.single_right_1 ul{
+		margin-left:180px;
+	}
+	.single_right_1 ul li{
+		padding:20px 20px 10px 20px;
+	}
+	.single_right_1 ul li a{
+		font-size:16px;
+		}
+	.single_right_1 ul li .li_last{
+		color:#000;
+		font-size:20px;
+	}
+	.right_left{
+		width:285px;
+		padding:20px 0px 0px 30px;
+		float:left;
+	}
+	.right_left p{
+		font-size:16px;
+		color:#000;
+		background:url(images/boc2013_icon.png) no-repeat  0px -54px;
+		text-indent:30px;
+	}
+	.right_left a{
+		display:block;
+		font-size:16px;
+		color:#000;
+		margin-top:20px;
+		margin-left:-20px;
+	}
+	.right_left a:hover{
+		color:#F30;
+	}
+	.right_left span{
+		font-size:12px;
+		color:#666;
+	}
+	#fenXiang{
+		display:block;
+		width:60px;
+		height:25px;
+		border:1px solid #CCC;
+		background:url(images/boc2013_icon.png) no-repeat 4px -548px;
+		text-align:center;
+		line-height:25px;
+		border-radius:4px;
+		font-size:12px;
+		margin-left:4px;
+	}
+	.right_right{
+		width:285px;
+		padding:20px 0px 0px 30px;
+		float:right;
+	}
+	.right_right ul li{
+		display:block;
+		background:url(images/boc2013_dot_icon.png) no-repeat 0px -76px;
+		text-indent:24px;
+		padding:3px 0px 3px 0px;
+	}
+	.banking{
+		width:978px;
+		height:375px;
+		background:#FFF;
+		margin-top:13px;
+		border:1px solid #CCC;
+		border-radius:4px;
+	}
+	 .banking_left{
+		float:left;
+		width:646px;
+		height:95%;
+		
+		
+	}
+	.banking_left{
+		
+		margin:20px 10px 0px 20px;
+		float:left;
+		
+	}
+	.banking_top hr{
+		background:url(images/boc2013_dot_linex.gif);
+		height:1px;
+		border:none;
+		margin-top:-10px;
+		width:590px;
+		margin-left:-1px;
+	}
+	
+	.th1{
+		background:url(images/boc2013_icon.png) no-repeat 0px -585px;
+		text-indent:35px;
+	}
+	.banking_bottom div{
+		float:left;
+		width:310px;
+		height:80px;
+		margin-top:10px;
+		
+		
+	}
+	.banking_bottom .gongGao1{
+		font-size:14px;
+		color:#000;
+	}
+	.banking_bottom ul {
+		margin-top:-1px;
+		
+	}
+	
+	.banking_bottom ul li{
+		margin-top:2px;
+		
+		}
+	.banking_bottom hr{
+		width:280px;
+		margin-left:-1px;
+		border:none;
+		height:1px;
+		background:#CCC;
+		margin-top:10px;
+	}
+	
+	 .banking_right{
+		float:right;
+		width:300px;
+		height:100%;
+		border-left:1px solid #CCC;
+	
+	}
+	.banking_right div{
+		margin-left:20px;
+		margin-top:20px;
+	}
+	.li1{
+		background:url(images/boc2013_icon.png) no-repeat 0px -624px;
+		text-indent:30px;
+		
+	}
+	.li1 a{
+		color:#C00;
+	}
+	.ul hr{
+		background:url(images/boc2013_dot_linex.gif);
+		height:1px;
+		border:none;
+		margin:10px 0px 10px -1px;
+		
+		
+		}
+	#dongDang{
+		margin-left:-30px;
+	}
+	#dongDang a:hover{
+		color:#F30;
+	}
+	.media{
+		width:978px;
+		height:420px;
+		background:#FFF;
+		margin-top:13px;
+		border:1px solid #CCC;
+		border-radius:4px;
+	}
+	 .media_left{
+		float:left;
+		width:318px;
+		height:100%;
+		border-right:1px solid #CCC;
+		
+	}
+	.media_box{
+		width:280px;
+		height:95%;
+		margin:20px;
+		
+	}
+	
+	.media_box hr{
+		width:100%;
+		height:1px;
+		background-color:#CCC;
+		margin-top:20px;
+		border:none;
+	}
+	
+	.media_box a dl{
+		float:left;
+		font-size:12px;
+		padding:2px;
+		color:#000;
+
+	}
+	.media_box a dl:hover{
+		color:#F30;
+	}
+	
+	 .media_right{
+		float:right;
+		width:658px;
+		height:100%;
+	}
+	.media_top{
+		width:611px;
+		height:149px;
+		margin:20px 10px 0px 20px;
+		
+	}
+	
+	.media_right hr{
+		width:100%;
+		height:1px;
+		background-color:#CCC;
+		margin-top:55px;
+		border:none;
+		}
+	.media_bleftbox{
+		float:left;
+		height:195px;
+		border-right:1px solid #CCC;
+	}
+	.media_bleft{
+		
+		width:285px;
+		height:155px;
+		margin:20px 10px 0px 20px;
+	}
+	.media_bleft ul{
+		margin-top:25px;
+	}
+	.media_bright{
+		float:right;
+		width:285px;
+		height:155px;
+		margin:20px 10px 0px 20px;
+		}
+	.media_bright .gongGao{
+		font-size:16px;
+	}
+	.media_bright ul{
+		margin-top:30px;
+	}
+		
+	.service{
+		width:978px;
+		height:275px;
+		background:#FFF;
+		margin-top:13px;
+		border:1px solid #CCC;
+		border-radius:4px;
+		
+	}
+	.service_left{
+		float:left;
+		width:560px;
+		height:100%;
+		background:url(images/map.gif) no-repeat;
+	}
+	.service_right{
+		float:right;
+		width:390px;
+		height:100%;
+		padding:15px 0px 0px 15px; 
+	}
+	.service_right ul{
+		margin-top:10px;
+	}
+	.service_right ul li {
+		width:68px;
+		height:24px;
+	}
+	/* .gongSi{
+		display:block;
+		width:258px ;
+		height:35px;
+		border:1px solid #CCC;
+		border-radius:4px;
+		line-height:36px;
+		margin-left:2px;
+		font-size:12px;
+		font-family:"宋体";
+		color:#000;
+		background:url(images/m.png) no-repeat center right;
+		
+		
+	}
+	*/
+	.menu{
+		width:258px ;
+		height:35px;
+		border:1px solid #CCC;
+		border-radius:4px;
+		
+		margin-left:-1px;
+	}
+	.menu ul{
+		list-style:none;
+	}
+	.menu ul li{
+		
+		float:left;
+		line-height:40PX;
+		text-align:center;
+		position:relative;
+		
+		
+	}
+	.menu a{
+		text-decoration:none;
+		color:#000;
+		display:block;
+		width:258px;
+		margin-top:-10px;
+		
+	}
+	.menu .gongSi{
+		text-decoration:none;
+		color:#000;
+		display:block;
+		width:258px;
+		margin-top:-10px;
+		background:url(images/m.png) no-repeat center right;
+		}
+	.menu a:hover{
+		color:#F30;
+		background:#CCF;
+		
+	}
+	.menu ul li ul{
+		width:100px;
+		position:absolute;
+		top:16px;
+		left:-15px;
+		display:none;
+		}
+	.menu ul li ul li{
+		float:none;
+		border-left:none;
+		margin-top:2px;
+		
+	}
