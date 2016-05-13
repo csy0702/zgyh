@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10_函数中的对象_作用域</title>
+	</head>
+	<body>
+		<pre>
+			1.作用域：指的是变量起作用的范围。
+			2.全局变量
+			3.定义在函数里面的变量就是局部变量，但是一定要用var定义。否则它就作用于全部了。
+			
+			4.写函数时，声明变量都要加var。
+			
+			5.在函数中声明的局部变量，在外面是访问不到的。会出现undefined。
+			
+
+
+			
+		</pre>
+		<script type="text/javascript">
+			
+			var val="apple";
+			
+			
+			function funA(){
+				val="pear";	//在函数中没有用var声明变量，那么这个变量就是全局变量,已经覆盖了之前定义过的全局变量val="apple"
+				document.write("innerval:"+val+"<br/>");
+			}
+			funA();								//   =>输出pear
+			document.write("outval:"+val+"<br/>");//    =>输出pear
+			
+			
+			function funB(){
+				var val="banana";	//在函数中用var声明变量，那么这个变量就是局部变量
+				//使用var声明了一个局部变量，虽然名字与全局变量是一样的，但局部变量的优先级比全局变量的优先级高。
+				document.write("innerval2:"+val+"<br/>");
+			}
+			funB();								//=>输出banana
+			document.write("outval2:"+val+"<br/>");//=>输出pear
+			
+			
+			
+			function funC(){
+				var cc="csy";
+				
+			}
+			document.write("在外面访问的函数funC中的cc："+cc);//会出错，undefined。在函数中声明的局部变量，在外面是访问不到的。
+		</script>
+	</body>
+</html>

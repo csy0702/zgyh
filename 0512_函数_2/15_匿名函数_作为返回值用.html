@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>15_匿名函数_作为返回值用</title>
+	</head>
+	<body>
+		<script>
+			function a(){
+				document.write("hello<br/>")
+				
+				return function(name ){
+					document.write("bye bye"+name+"<br/>");
+				};
+
+			}
+			
+			var r=a();//  先调用函数a()    输出为hello
+				r("张三");    //把返回值（即返回的代码激活）用（）激活      输出bye  bye"张三"
+				
+				
+			/*
+			 var r=function(name ){
+					document.write("bye bye"+name+"<br/>");
+				r();
+			 
+			 */
+				
+			a()("张三");    //输出hello
+							//bye bye "张三"
+		</script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>16_匿名函数_重写函数自身</title>
+	</head>
+	<body>
+		<script>
+			function a(){
+				document.write("hello<br/>");
+				a=function(){
+					document.write("bye<br/>");
+				}
+			}
+			
+			a();//第一次执行   输出hello
+			a();//第二次执行   输出bye  
+			
+			function showTable(){
+				document.write("检测浏览器<br/>");
+				var r=2;
+				if( window.ActiveXObject){		//注：window.ActiveXObject方法不用加（）
+					r=1;
+				}
+				if(r==1){
+					showTable=function(){
+						document.write("以ie的特性显示出来table<br/>");//以表格的形式显示出来
+						var arr=arguments[0];
+						document.write("<table border='1' width='400px'>");
+						
+						for(var i=0;i<arr.length;i++){
+							document.write("<tr>");
+							document.write("<td>"+arr.name+"</td><td>"+arr.age+"</td>");
+							document.write("</tr>");
+						}
+						
+						document.write("</table>");
+					}	//重写函数自身showTable
+					
+				}else if(r==2){
+					showTable=function(){
+						document.write("以ff的特性显示出来table<br/>");
+						//ff用ul  li
+						
+						var arr=arguments[0];
+						
+						document.write("<ul>");
+						for(var i=0;i<arr.length;i++){
+							document.write("<li>");
+							document.write(arr.name+"   "+arr.age);
+							document.write("</li>");
+						}
+						
+						document.write("</ul>");
+						
+					}
+				}
+			}
+			
+			
+			//在自调用一次性运行一下这些函数，这些函数就将识别浏览器的类型，并将自身重写
+			
+			(function(){
+				showTable();
+				
+			})();
+			
+			var arr=[{name:"smith",
+					   age:13},
+					 {name:"lucy",
+					 age:15}];
+					 
+			showTable( arr);
+			
+		</script>
+	</body>
+</html>

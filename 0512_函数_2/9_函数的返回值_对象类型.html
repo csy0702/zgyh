@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>9_函数的返回值_对象类型</title>
+	</head>
+	<body>
+		<script>
+			function add(vala,valb){
+				var sum=vala+valb;
+				return{	result:sum,	a:vala, b:valb};//返回一个对象
+				
+			}
+			//需求：计算返回的值：{a:xx ,   b:xx,   result:xxx  };
+			var r=add(1,2);
+			document.write(  r.a+"+"+r.b+"="+r.result+"<br/>"  );
+			
+			
+			function add2(){
+				var sum=0;
+				var arr=new Array();//创建一个新的数组
+				for(var i=0;i<arguments.length;i++){
+					sum+=arguments[i];
+					arr[i]=arguments[i];//把arguments里面存放的元素赋值给新创建的arr数组
+					
+				}
+				return{ result:sum,  origin:  arr};//返回值的对象类型。
+											//arr=[1,2,3,4,5]
+			}
+			
+			var r2=add2(1,2,3,4,5);
+			var str=r2.origin.join("+");   //.join()  字符的拼接  把字符串用+连接起来。每次调用都要调用对应函数中对象里面的元素
+			
+			document.write(  str+"="+  r2.result);
+			
+		</script>
+	</body>
+</html>

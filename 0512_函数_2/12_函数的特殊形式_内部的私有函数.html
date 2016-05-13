@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<pre>
+			1.内部私有函数：一个函数内声明一个函数，里面的子函数在外面是访问不到的。仅供父级函数调用。
+			2.如果要调用子函数，那么就调用父级函数，
+		</pre>
+		<script>
+			
+			
+			function show(){
+				//show的子函数son
+				function son(){		//子涵是传门用来包装一些特殊算法。
+					document.write("hello"+"<br/>");
+					
+				}
+				son();//必须要写   与show（）对应
+			}
+			
+			//  在show的外面是不能调用到  son(); 
+			
+			//   son（）   =>referenceerror：son is not defined  
+			
+			show()	//显示hello
+			
+			
+			//写一个函数，传入两个参数和一个运算符。计算两个数运算的结果
+			
+			function jiSuan(a,b,op){
+				function add(a,b){
+					return a+b;
+				}
+				function sub(a,b){
+					return a-b;
+				}
+				function mul(a,b){
+					return a*b;
+				}
+				if(op=='+'){
+					return add(a,b);
+				}else if(op=='-'){
+					return sub(a,b);
+				}else if(op=='*'){
+					return mul(a,b);
+				}
+				
+			}
+			
+			document.write(  jiSuan(3,4,'-') );
+			
+			
+			
+		</script>
+	</body>
+</html>

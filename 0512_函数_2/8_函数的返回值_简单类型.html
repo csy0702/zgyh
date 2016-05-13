@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>8_函数的返回值_简单类型</title>
+	</head>
+	<body>
+		<pre>
+			1.函数一定是有返回值，如果不写则返回undefined
+			2.return运行完后，函数的执行中止. 
+			3.一个函数只有一个返回值.如果要有多个返回值，则使用数组或对象. 
+			
+		</pre>
+		<script>
+			
+			function add(){
+				var sum=0;
+				for(var i=0;i<arguments.length;i++){
+					sum+=arguments[i];
+					
+				}
+				return sum;
+			}
+			
+			document.write(	add(1,2,3,4)+	"<br/>");
+			
+			
+			function show(){
+				var x=5;	//没有返回值
+			}
+			document.write(   show());   //输出undefined
+		</script>
+	</body>
+</html>
