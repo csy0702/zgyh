@@ -23,8 +23,9 @@
 			function mergeObject(defaultvalue,realvalue){
 				if(	 realvalue  &&	typeof realvalue=='object'){
 					for(var key in realvalue){			//name    pages
-						defaultvalue=realvalue[key] ||  defaultvalue[key];//realvalue['name']=>'js深入浅出'     
+						defaultvalue[key]=realvalue[key] ||  defaultvalue[key];//realvalue['name']=>'js深入浅出'     
 						//realvalue['pages']=>'400'
+						//对应的key（键）一定要写
 						
 					}
 				}
